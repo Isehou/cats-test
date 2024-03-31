@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cats</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="upload-wrapper">
+      <div class="img-block"><img class="img" id="catImg" alt="" /></div>
+      <div class="upload__input-button-container">
+        <input
+          class="upload-input"
+          id="statusCodeInput"
+          type="text"
+          placeholder="код ошибки..."
+        />
+        <button class="upload-btn" onclick="getCat()">Загрузить</button>
+      </div>
+      <div class="last-code">
+        Последние 5 кодов ошибок, которые вы загружали:
+        <span id="lastCodes"></span>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
